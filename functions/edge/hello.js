@@ -10,7 +10,7 @@ export async function onRequest(context) {
   } = context;
 
   const app_name = env.APP_NAME;
-  const kv_app_name = env.astrotests.get("KV_APP_NAME");
+  const kv_app_name = await env.astrotests.get("KV_APP_NAME");
 
   return new Response(`Hello, ${app_name} - ${kv_app_name}!`);
 }
