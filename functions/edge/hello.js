@@ -9,8 +9,7 @@ export async function onRequest(context) {
     data, // arbitrary space for passing data between middlewares
   } = context;
 
-  console.log(env);
-  const app_name = await env.astrocloudflaretests.get("APP_NAME");
+  const app_name = env.APP_NAME;
 
   return new Response(`Hello, ${app_name}!`);
 }
