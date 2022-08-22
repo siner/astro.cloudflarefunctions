@@ -1,0 +1,3 @@
+kv_namespaces = [
+    { binding = "astrotests", id = "4abf0afea27f42c8bd62597036290c8c", preview_id = "0d337cc6724444fe834c2e9885bad848" }
+]
